@@ -7,3 +7,6 @@ class TestPub(unittest.TestCase):
 
     def test_pub_has_name(self):
         self.assertEqual("The name of the Pub", self. pub.name)
+
+    def test_pub_has_a_till(self):
+        self.assertEqual(100, self.pub.till)
