@@ -7,3 +7,5 @@ class Pub:
 
     def increase_till(self, amount):
         self.till+= amount
+
+    
