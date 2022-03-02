@@ -6,3 +6,6 @@ class Customer:
     def can_afford_drink(self, drink):
         if self.wallet >= drink:
             return True
+
+    def remove_from_wallet(self, amount):
+        self.wallet -= amount
