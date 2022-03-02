@@ -11,4 +11,7 @@ class TestCustomer(unittest.TestCase):
     def test_customer_has_wallet(self):
         self.assertEqual(100, self.customer.wallet)
 
+    def test_customer_can_afford_drink(self):
+        self.customer.can_afford_drink(3)
+        self.assertEqual(True, self.customer.can_afford_drink(3))
     
