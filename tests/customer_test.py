@@ -1,5 +1,7 @@
 import unittest
 from src.customer import Customer
+from src.drink import Drink
+from src.pub import Pub
 
 class TestCustomer(unittest.TestCase):
     def setUp(self):
@@ -18,5 +20,12 @@ class TestCustomer(unittest.TestCase):
     def test_remove_from_wallet(self):
         self.customer.remove_from_wallet(3)
         self.assertEqual(97, self.customer.wallet)
+
+    # def test_can_buy_drink(self):
+    #     customer_1 = Customer("Bill", 50)
+    #     customer_2 = Customer("Rosa", 1)
+    #     drink_1 = Drink("beer", 4)
+    #     drink_2 = Drink("wine", 6)
+    #     self.customer.can_afford_drink(drink_1)
 
     

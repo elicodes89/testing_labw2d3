@@ -9,3 +9,4 @@ class Customer:
 
     def remove_from_wallet(self, amount):
         self.wallet -= amount
+        
